@@ -1,32 +1,13 @@
 # snp-timediff
-DHBW Exam in ASM
+DHBW Exam in assembly language with the following requirements:
 
 
-**Programmentwurf**
-**Systemnahe Programmierung**
-**Kurs TIT 20**
+## Programmentwurf Systemnahe Programmierung Kurs TIT20
 
 ### Bearbeitungshinweise
-
-Die Prüfungsleistung für die Vorlesung Systemnahe Programmierung wird durch einen Programmentwurf in Intel x86- 64 Assembler für den NASM Assembler un-ter dem Betriebssystem Linux erbracht. Andere Programmiersprachen sowie C-Bibliotheksfunktionen in Assemblerprogrammen dürfen nicht verwendet wer-den, außer dies ist in der Aufgabenstellung ausdrücklich gefordert. **Der Programmentwurf wird gruppenweise erstellt (max. drei Studierende pro Gruppe)**. Die Namen der Gruppenmitglieder sind im Quellcode zu vermer-ken. Außerdem ist zu vermerken, welches Gruppenmitglied welche Aufgabentei-le überwiegend bzw. schwerpunktmäßig bearbeitet hat.
-Wenn Sie Programmfragmente aus der Literatur, dem Internet oder von anderen Quellen verwenden, ist die Quelle als Kommentar kenntlich zu machen.
-
-### Bewertung und Abgabe
-Der Aufgaben werden anhand der folgenden Kriterien bewertet:
-
-- Funktionalität, Korrektheit und Effizienz
-- Verständlichkeit, Kommentierung, Strukturierung
-
-Der Programmentwurf ist jeweils einmal pro Gruppe als „gezipptes“ Archiv im tar-Format bis spätestens
-
-```Donnerstag, 14. April 2022, 23:59 CEST```
-
-per Email an rdrcode@gmx.eu sowie in Kopie an das Sekretariat Informations-technik, Fr. Schmidt zu schicken. Abzugeben sind der vollständige Quellcode, das Makefile sowie das ausführbare Programm.
-
-Beachten Sie bitte, dass Sie für die Vollständigkeit und Lesbarkeit des abgegebe-nen Quellcodes verantwortlich sind. Der Name der abzugebenden Archivdatei ist `pe_tit 20 _nachname1_nachname2_nachname3.tar.gz`.
+Die Prüfungsleistung für die Vorlesung Systemnahe Programmierung wird durch einen Programmentwurf in Intel x86-64 Assembler für den NASM Assembler unter dem Betriebssystem Linux erbracht. Andere Programmiersprachen sowie C-Bibliotheksfunktionen in Assemblerprogrammen dürfen nicht verwendet werden, außer dies ist in der Aufgabenstellung ausdrücklich gefordert.
 
 ### Aufgabenstellung
-
 Schreiben Sie ein Assembler-Programm timediff, welches eine Folge aufstei-
 gend sortierter Zeitstempel einliest und für jeden Zeitstempel die Zeitdifferenz 
 zu dessen Vorgänger ausgibt.
@@ -49,9 +30,7 @@ zu dessen Vorgänger ausgibt.
 - Für die Ausgabe werden die Zeitstempel aus der Liste ausgelesen.
 - Die Ausgabe der Zeitstempel und der Zeitdifferenzen muss dem Format des unten aufgeführten Beispiels entsprechen.
 
-
-### Beispiel einer Eingabefolge:
-
+#### Beispiel einer Eingabefolge:
 ```
 1000000000.0
 1234567890.000000
@@ -66,8 +45,7 @@ zu dessen Vorgänger ausgibt.
 1502736311.000001
 ```
 
-### Format für die Ausgabe:
-
+#### Format für die Ausgabe:
 ```
 1000000000.000000
 =======
@@ -101,3 +79,26 @@ zu dessen Vorgänger ausgibt.
 1502736311.000001
 1 day, 09:05:09.000001
 ```
+
+## [LICENSE](LICENSE)
+MIT License
+
+Copyright (c) 2022 Johannes Brandenburger, Lukas Braun, Henry Schuler
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
